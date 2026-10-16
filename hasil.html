@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Web Page - Hasil Pemesanan</title>
+</head>
+<body>
+
+<center>
+    <!-- Frame Utama Berbasis Tabel Murni (Tanpa CSS) -->
+    <table border="1" cellpadding="15" cellspacing="0" width="700">
+        <tr>
+            <td>
+                <!-- Header / Navigasi -->
+                <table width="100%" border="0" cellpadding="5" cellspacing="0">
+                    <tr>
+                        <td align="center">
+                            <a href="index.html">Home</a> &nbsp;|&nbsp;
+                            <b><a href="hasil.html">Generate Link</a></b> &nbsp;|&nbsp;
+                            <a href="#">Transaction History</a> &nbsp;|&nbsp;
+                            <a href="#">Policy</a> &nbsp;|&nbsp;
+                            <a href="#">Logout</a>
+                        </td>
+                    </tr>
+                </table>
+
+                <hr>
+
+                <!-- Konten Rincian -->
+                <table width="100%" border="0" cellpadding="6" cellspacing="0">
+                    <tr>
+                        <!-- Kolom Kiri: Foto Barang -->
+                        <td width="150" valign="top" align="center">
+                            <table border="1" cellpadding="10" cellspacing="0" width="130">
+                                <tr>
+                                    <td align="center" height="120">
+                                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                            <circle cx="8.5" cy="8.5" r="1.5"/>
+                                            <polyline points="21 15 16 10 5 21"/>
+                                        </svg>
+                                        <br>
+                                        <small>Foto Barang</small>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+
+                        <!-- Kolom Kanan: Detail Fields -->
+                        <td valign="top">
+                            <table width="100%" border="0" cellpadding="5" cellspacing="0">
+                                <tr>
+                                    <td align="right" width="140"><b>Title Here :</b></td>
+                                    <td><span id="resJudul">—</span></td>
+                                </tr>
+
+                                <tr>
+                                    <td align="right" valign="top"><b>Description :</b></td>
+                                    <td><span id="resDeskripsi">—</span></td>
+                                </tr>
+
+                                <tr>
+                                    <td align="right"><b>Total Amount :</b></td>
+                                    <td><span id="resTotal">—</span></td>
+                                </tr>
+
+                                <tr>
+                                    <td align="right"><b>Pay to :</b></td>
+                                    <td><span id="resPayTo">—</span></td>
+                                </tr>
+
+                                <tr>
+                                    <td align="right"><b>Payment Type :</b></td>
+                                    <td>
+                                        <select id="resBank" disabled>
+                                            <option selected>— Belum Terpilih —</option>
+                                        </select>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td align="right"><b>Account Holder :</b></td>
+                                    <td><input type="text" id="resPemilik" readonly value="" placeholder="—" size="30"></td>
+                                </tr>
+
+                                <tr>
+                                    <td align="right"><b>Account No :</b></td>
+                                    <td><input type="text" id="resRekening" readonly value="" placeholder="—" size="30"></td>
+                                </tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <label><input type="checkbox" id="resSms" disabled> Send to Mobile Phone</label><br>
+                                        <label><input type="checkbox" id="resEmailCheck" disabled> Email me copy of transaction</label>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td align="right"><b>Send to Mobile :</b></td>
+                                    <td><input type="text" id="resTelepon" readonly value="" placeholder="—" size="30"></td>
+                                </tr>
+
+                                <tr>
+                                    <td align="right"><b>Send to Email :</b></td>
+                                    <td><input type="text" id="resEmail" readonly value="" placeholder="—" size="30"></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+
+                <br>
+                <div align="center">
+                    <button type="button">Pay using QuidLink</button>
+                </div>
+
+                <hr>
+                <div align="center">
+                    <a href="index.html">← Kembali ke Form Pemesanan</a>
+                </div>
+            </td>
+        </tr>
+    </table>
+</center>
+</body>
+</html>
